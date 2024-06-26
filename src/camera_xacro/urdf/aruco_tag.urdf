@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<robot name="aruco_tag">
+  <link name="aruco_link">
+    <visual>
+      <!-- Wall box visual -->
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.3 0.3"/> <!-- Size of the box (width=0.01m, height=0.3m, depth=0.3m) -->
+      </geometry>
+
+      <!-- Specify material using a script -->
+      <material name="wall_texture">
+        <script>
+          <uri>$(find camera_xacro)/materials/wall_texture.material</uri>
+          <name>wall_texture</name>
+        </script>
+      </material>
+
+      <!-- Front face (0.3 x 0.3) with texture -->
+      <visual>
+        <origin xyz="0 0 0.15" rpy="0 0 0"/> <!-- Position relative to the box -->
+        <geometry>
+          <plane size="0.3 0.3"/> <!-- Size of the face to apply texture to -->
+        </geometry>
+        <material name="wall_texture"/> <!-- Apply the material with texture -->
+      </visual>
+
+    </visual>
+
+    <collision>
+      <!-- Collision model for the wall box -->
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.3 0.3"/> <!-- Size of the box for collision model -->
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="0.01"/> <!-- Mass of the wall box -->
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/> <!-- Inertia properties -->
+    </inertial>
+  </link>
+
+  <!-- Link to Ground (world frame) -->
+  <link name="ground"/>
+  <joint name="fixed" type="fixed">
+    <parent link="ground"/>
+    <child link="aruco_link"/>
+    <origin xyz="4.0 0.0 0.05" rpy="0 0 0"/> <!-- Adjust xyz to position the box above ground -->
+  </joint>
+</robot>
+
+
+
+<!-- <?xml version="1.0"?>
+<robot name="aruco_tag">
+  <link name="aruco_link">
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 0.01"/> 
+      </geometry>
+      <material>
+        <script>
+          <uri>package://camera_xacro/textures/marker_0.png</uri> 
+        </script>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.1 0.1 0.01"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/> 
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
+    </inertial>
+  </link>
+</robot> -->
+
+

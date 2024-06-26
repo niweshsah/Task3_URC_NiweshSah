@@ -1,0 +1,14 @@
+material wall_texture
+{
+    receive_shadows off;
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture ../textures/marker_0.dae
+            }
+        }
+    }
+}

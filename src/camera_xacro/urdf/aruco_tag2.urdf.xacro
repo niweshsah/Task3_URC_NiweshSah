@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="aruco_tag" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:property name="scale" value="${1.0}"/>
+
+  <link name="aruco_tag">
+    <visual>
+      <geometry>
+        <box size="${scale} ${scale} 0.01"/>
+      </geometry>
+      <material>
+        <texture filename="package://camera_xacro/textures/marker_0.png"/>
+      </material>
+    </visual>
+  </link>
+</robot>
