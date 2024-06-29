@@ -63,12 +63,12 @@ Before you can run the node, make sure you have the following installed:
      <xacro:include filename="$(find camera_xacro)/urdf/camera.xacro"/>
      ```
 
-6. **Move " Marker0 " file to new location**
+6. **Move aruco model file to new location**
 
    Open terminal:
 
    ```bash
-     mv ~/catkin_ws/src/marker0/ 
+     mv ~/catkin_ws/src/marker_0/  ~/.gazebo/models/
    ```
    
 
