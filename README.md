@@ -99,8 +99,17 @@ Before you can run the node, make sure you have the following installed:
    Adjust the pose of robot and you should be able to detect the inserted aruco marker.
 
 
-## Doing Aruco Detection in Gazebo world from Scratch
+## Adding custom Aruco Detection code 
 
-1. Make your python/C++ code for aruco code detection (We wrote a C++ code).
-2. Update the 
-   
+1. Make your python/C++ code for aruco code detection (We wrote a C++ code). Make it executable and save it
+2. Rebuild and source the workspace.
+3. Add the following line in the launch file
+
+```bash
+  <node name="aruco_detector_cpp" pkg="camera_xacro" type="aruco_detector_cpp" output="screen" />  
+```
+4. Now follow the above given steps to run aruco detection in Gazebo Simulation.
+
+## Resources used
+
+[write the resources here]
