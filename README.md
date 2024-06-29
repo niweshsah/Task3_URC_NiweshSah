@@ -41,10 +41,9 @@ Before you can run the node, make sure you have the following installed:
     source /opt/ros/noetic/setup.bash
      export TURTLEBOT3_MODEL=burger
      source ~/catkin_ws/devel/setup.bash
-    ```
+     ```
 
-     Then, open terminal:
+     Save the file and open the terminal:
      ```bash
     source ~/.bashrc
     ```
-        
