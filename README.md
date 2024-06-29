@@ -63,7 +63,7 @@ Before you can run the node, make sure you have the following installed:
      <xacro:include filename="$(find camera_xacro)/urdf/camera.xacro"/>
      ```
 
-6. **Move " marker0 " file to new location**
+6. **Move " Marker0 " file to new location**
 
    Open terminal:
 
@@ -72,14 +72,35 @@ Before you can run the node, make sure you have the following installed:
    ```
    
 
- ## Doing AruCo Detection in Gazebo
+ ## Doing Aruco Detection in Gazebo
 
 1. **Open Gazebo world with Turtlebot**
   
-      Open terminal and type:
+   Open terminal and type:
 
      ```bash
-     roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch 
+     cd ~/urc_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch/
+     roslaunch turtlebot3_empty_world.launch 
      ```
 
-2. 
+2. **Insert aruco marker**
+
+   In the gazebo world, go to " Insert " tab and click the "Marker0" model. Adjust the position of "Marker0" model in the Gazebo world.
+
+
+3. **Adjust the robot using Teleoperation node**
+
+   Open terminal and type:
+
+   ```bash
+   roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch  
+   ```
+
+   Adjust the pose of robot and you should be able to detect the inserted aruco marker.
+
+
+## Doing Aruco Detection in Gazebo world from Scratch
+
+1. Make your python/C++ code for aruco code detection (We wrote a C++ code).
+2. Update the 
+   
