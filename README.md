@@ -51,17 +51,35 @@ Before you can run the node, make sure you have the following installed:
 5. **Adding camera to turtlebot3 burger**
 
    Open terminal:
+   
      ```bash
-       roscd turtlebot3_description/
-       cd urdf/
+     roscd turtlebot3_description/
+     cd urdf/
      ```
 
     Open " turtlebot3_burger.urdf.xacro " file and add the following line and sudo save it:
 
      ```bash
-        <xacro:include filename="$(find camera_xacro)/urdf/camera.xacro"/>
+     <xacro:include filename="$(find camera_xacro)/urdf/camera.xacro"/>
      ```
 
-    ## Doing AruCo Detection in Gazebo
+6. **Move " marker0 " file to new location**
 
-   1. Add camera to 
+   Open terminal:
+
+   ```bash
+     mv ~/catkin_ws/src/marker0/ 
+   ```
+   
+
+ ## Doing AruCo Detection in Gazebo
+
+1. **Open Gazebo world with Turtlebot**
+  
+      Open terminal and type:
+
+     ```bash
+     roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch 
+     ```
+
+2. 
