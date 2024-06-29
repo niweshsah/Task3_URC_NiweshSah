@@ -47,3 +47,21 @@ Before you can run the node, make sure you have the following installed:
      ```bash
     source ~/.bashrc
     ```
+
+5. **Adding camera to turtlebot3 burger**
+
+   Open terminal:
+     ```bash
+       roscd turtlebot3_description/
+       cd urdf/
+     ```
+
+    Open " turtlebot3_burger.urdf.xacro " file and add the following line and sudo save it:
+
+     ```bash
+        <xacro:include filename="$(find camera_xacro)/urdf/camera.xacro"/>
+     ```
+
+    ## Doing AruCo Detection in Gazebo
+
+   1. Add camera to 
