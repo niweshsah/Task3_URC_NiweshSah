@@ -16,7 +16,6 @@ Before you can run the node, make sure you have the following installed:
     cd ~
     mkdir catkin_ws
     cd catkin_ws/
-    
     ```
 
 2.  **Clone the Repository**
@@ -68,7 +67,7 @@ Before you can run the node, make sure you have the following installed:
    Open terminal:
 
    ```bash
-     mv ~/catkin_ws/src/Marker0/  ~/.gazebo/models/
+     mv ~/catkin_ws/src/marker_0/  ~/.gazebo/models/
    ```
    
 
@@ -85,7 +84,7 @@ Before you can run the node, make sure you have the following installed:
 
 2. **Insert aruco marker**
 
-   In the gazebo world, go to " Insert " tab and click the "Marker0" model. Adjust the position of "Marker0" model in the Gazebo world.
+   In the gazebo world, go to " Insert " tab and click the "marker_0" model. Adjust the position of "Marker0" model in the Gazebo world.
 
 
 3. **Adjust the robot using Teleoperation node**
@@ -109,6 +108,11 @@ Before you can run the node, make sure you have the following installed:
   <node name="aruco_detector_cpp" pkg="camera_xacro" type="aruco_detector_cpp" output="screen" />  
 ```
 4. Now follow the above given steps to run aruco detection in Gazebo Simulation.
+
+
+
+## Demo Video
+
 
 ## Resources used
 
