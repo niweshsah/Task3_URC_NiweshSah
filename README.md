@@ -68,7 +68,7 @@ Before you can run the node, make sure you have the following installed:
    Open terminal:
 
    ```bash
-     mv ~/catkin_ws/src/marker_0/  ~/.gazebo/models/
+     mv ~/catkin_ws/src/Marker0/  ~/.gazebo/models/
    ```
    
 
