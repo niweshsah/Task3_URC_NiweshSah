@@ -110,10 +110,14 @@ Before you can run the node, make sure you have the following installed:
 4. Now follow the above given steps to run aruco detection in Gazebo Simulation.
 
 
-
 ## Demo Video
 
+Refer to this [video](https://youtu.be/gz6GUQ0oo8Q).
 
-## Resources used
+**Recommended:** Watch this at 2x.
 
-[write the resources here]
+## Resources Used
+
+1. https://classic.gazebosim.org/tutorials?tut=ros_gzplugins
+2. https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html
+3. https://dhanuzch.medium.com/using-opencv-with-gazebo-in-robot-operating-system-ros-part-1-display-real-time-video-feed-a98c078c708b
