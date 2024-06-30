@@ -79,7 +79,7 @@ Before you can run the node, make sure you have the following installed:
    Open terminal and type:
 
      ```bash
-     cd ~/urc_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch/
+     cd ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/launch/
      roslaunch turtlebot3_empty_world.launch 
      ```
 
