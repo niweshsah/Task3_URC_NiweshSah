@@ -22,7 +22,7 @@ Before you can run the node, make sure you have the following installed:
 2.  **Clone the Repository**
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/niweshsah/Task3_URC_NiweshSah.git
     ```
 
 3. **Build the Package**
