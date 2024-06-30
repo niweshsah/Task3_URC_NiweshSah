@@ -112,7 +112,7 @@ Before you can run the node, make sure you have the following installed:
 
 ## Demo Video
 
-Refer to this [video](https://youtu.be/gz6GUQ0oo8Q).
+Refer to this [video](https://youtu.be/lKm5FWqWc2M).
 
 **Recommended:** Watch this at 2x.
 
