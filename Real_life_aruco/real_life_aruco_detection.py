@@ -4,45 +4,22 @@ import numpy as np
 
 def detect_aruco_in_video():
 
-
-     # URL of the IP Webcam stream (replace with your actual IP and port)
-    # ip_camera_url = 'http://192.168.29.38:8080//video'
-
-    # Capture video from the IP camera
-    # cap = cv2.VideoCapture(ip_camera_url)
-
-    video_path = '/home/niweshsah/aruco_mobile_recording.mp4' # very important to write your username also
-    # Capture video from the prerecorded video file
+    video_path = '/path/to/your/video.mp4' # very important to write your username also
+    
     cap = cv2.VideoCapture(video_path)
-
-    # Capture video from the webcam
-    # cap = cv2.VideoCapture(0)
 
     # Check if the webcam is opened correctly
     if not cap.isOpened():
         print(f"Error: Could not open video at {video_path}.")
         return
-    
-
-    
 
     aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_6X6_250)
 
     parameters =  aruco.DetectorParameters()
 
-    # detector = aruco.ArucoDetector(aruco_dict, parameters)
-
-
-    # Select the dictionary you are using
-    # aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_250)
-
-    # # Create parameters for the detector
-    # parameters = aruco.DetectorParameters_create()
-
-
     while True:
-        # Capture frame-by-frame
 
+        # Capture frame-by-frame
         ret, frame = cap.read() # ret is a boolean character which returns false if frame is not captured correctly
 
         # Check if frame is captured correctly
@@ -57,7 +34,6 @@ def detect_aruco_in_video():
         if np.all(ids is not None): # if not all markers are None, i.e. (if there is any detected id)
             frame = aruco.drawDetectedMarkers(frame, corners, ids)
 
-
         # Display the frame with detected markers
         cv2.imshow('Detected ArUco markers', frame)
 
@@ -69,7 +45,7 @@ def detect_aruco_in_video():
     cap.release()
     cv2.destroyAllWindows()
 
+
 # Call the function to start detection
 if __name__ == "__main__":
-
     detect_aruco_in_video()
