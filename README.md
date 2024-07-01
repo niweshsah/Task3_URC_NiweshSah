@@ -118,6 +118,15 @@ Refer to this [video](https://youtu.be/lKm5FWqWc2M).
 
 ## Aruco Detection in Real World
 
+1. Generate your aruco tags using the code provided in repo
+2. Take print-out of these tags
+3. Put these tags in different places and record a video using camera/mobile.
+4. Transfer the video to your PC.
+5. Write your video's path in the detection code.
+
+   
+ #### Aruco detection is ready!!!
+
 ## Resources Used
 
 1. https://classic.gazebosim.org/tutorials?tut=ros_gzplugins
