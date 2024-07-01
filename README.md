@@ -125,7 +125,7 @@ Refer to this [video](https://youtu.be/lKm5FWqWc2M).
 5. Write your video's path in the detection code.
 
    
- #### Aruco detection is ready!!!
+ ####    Aruco detection is ready!!!
 
 ## Resources Used
 
