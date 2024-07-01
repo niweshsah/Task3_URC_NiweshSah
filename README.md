@@ -116,6 +116,8 @@ Refer to this [video](https://youtu.be/lKm5FWqWc2M).
 
 **Recommended:** Watch this at 2x.
 
+## Aruco Detection in Real World
+
 ## Resources Used
 
 1. https://classic.gazebosim.org/tutorials?tut=ros_gzplugins
